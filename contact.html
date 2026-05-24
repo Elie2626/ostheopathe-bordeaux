@@ -493,9 +493,6 @@
   });
   const db = getFirestore(app);
 
-  // ➜ Va sur web3forms.com, entre osteopathe.lencou@gmail.com, copie la clé ici
-  const W3F_KEY = 'REMPLACE_PAR_TA_CLE_WEB3FORMS';
-
   window.handleForm = async function(e) {
     e.preventDefault();
     const form = e.target;
@@ -511,34 +508,33 @@
     const prenom    = form.prenom.value.trim();
     const nom       = form.nom.value.trim();
     const email     = form.email.value.trim();
-    const telephone = form.telephone.value.trim() || 'Non renseigné';
-    const motif     = form.motif.value            || 'Non précisé';
-    const message   = form.message.value.trim()   || '—';
+    const telephone = form.telephone.value.trim() || null;
+    const motif     = form.motif.value            || null;
+    const message   = form.message.value.trim()   || null;
 
     try {
       // 1 — Sauvegarde Firestore
       await addDoc(collection(db, 'messages'), {
-        prenom, nom, email,
-        telephone: telephone !== 'Non renseigné' ? telephone : null,
-        motif:     motif     !== 'Non précisé'   ? motif     : null,
-        message:   message   !== '—'             ? message   : null,
+        prenom, nom, email, telephone, motif, message,
         timestamp: serverTimestamp(),
         lu: false
       });
 
-      // 2 — Envoi mail (répondre au mail = mail du client)
-      await fetch('https://api.web3forms.com/submit', {
+      // 2 — Envoi mail via Formsubmit (aucune clé nécessaire)
+      await fetch('https://formsubmit.co/ajax/osteopathe.lencou@gmail.com', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({
-          access_key: W3F_KEY,
-          subject:    `Nouveau message de ${prenom} ${nom}`,
-          from_name:  `${prenom} ${nom}`,
-          replyto:    email,
-          email:      email,
-          telephone,
-          motif,
-          message
+          _subject:  `Nouveau message de ${prenom} ${nom}`,
+          _replyto:  email,
+          _template: 'table',
+          _captcha:  'false',
+          Prénom:    prenom,
+          Nom:       nom,
+          Email:     email,
+          Téléphone: telephone || 'Non renseigné',
+          Motif:     motif     || 'Non précisé',
+          Message:   message   || '—'
         })
       });
 
