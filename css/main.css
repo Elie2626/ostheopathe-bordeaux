@@ -207,11 +207,14 @@ p {
   gap: 12px;
 }
 .nav-logo-img {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
+  width: 36px !important;
+  height: 36px !important;
+  max-width: 36px !important;
+  max-height: 36px !important;
+  border-radius: 8px;
   object-fit: contain;
   flex-shrink: 0;
+  display: block;
 }
 .nav-logo-text {
   display: flex;
