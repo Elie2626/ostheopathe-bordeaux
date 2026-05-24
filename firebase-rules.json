@@ -1,0 +1,44 @@
+{
+  "rules": {
+
+    "messages": {
+
+      // Lecture depuis le site : bloquée
+      // (tu lis les messages directement dans la console Firebase)
+      ".read": false,
+
+      "$messageId": {
+
+        // Écriture : tout le monde peut créer un nouveau message
+        // mais personne ne peut modifier ou supprimer un message existant
+        ".write": "!data.exists()",
+
+        // Validation des champs
+        ".validate": "newData.hasChildren(['prenom', 'nom', 'email', 'timestamp'])
+          && newData.child('prenom').isString()
+          && newData.child('prenom').val().length >= 1
+          && newData.child('prenom').val().length <= 100
+          && newData.child('nom').isString()
+          && newData.child('nom').val().length >= 1
+          && newData.child('nom').val().length <= 100
+          && newData.child('email').isString()
+          && newData.child('email').val().length >= 5
+          && newData.child('email').val().length <= 200
+          && newData.child('timestamp').isNumber()",
+
+        "prenom":    { ".validate": "newData.isString() && newData.val().length <= 100" },
+        "nom":       { ".validate": "newData.isString() && newData.val().length <= 100" },
+        "email":     { ".validate": "newData.isString() && newData.val().length <= 200" },
+        "telephone": { ".validate": "newData.isString() && newData.val().length <= 20" },
+        "motif":     { ".validate": "newData.isString() && newData.val().length <= 100" },
+        "message":   { ".validate": "newData.isString() && newData.val().length <= 2000" },
+        "timestamp": { ".validate": "newData.isNumber()" },
+        "lu":        { ".validate": "newData.isBoolean()" },
+
+        "$other":    { ".validate": false }
+      }
+    },
+
+    "$other": { ".read": false, ".write": false }
+  }
+}

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Ostéopathe Bordeaux — RDV, Adresse & Accès | Matteo Lencou</title>
+  <meta name="description" content="Cabinet ostéopathie Bordeaux : 30 Av. Vercingétorix 33000. Lun–Ven 9h–21h. RDV en ligne Doctolib 24h/24. Consultations aussi à domicile et au Cap Ferret. ☎ 06 75 57 24 88.">
+  <meta name="keywords" content="ostéopathe bordeaux contact, cabinet ostéopathie bordeaux adresse, ostéopathe bordeaux vercingétorix, rendez-vous ostéopathe bordeaux, ostéopathe bordeaux horaires, ostéopathe bordeaux telephone, ostéopathe bordeaux doctolib, ostéopathe domicile bordeaux, ostéopathe cap ferret, ostéopathe bordeaux centre ville, ostéopathe 33000 bordeaux">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Matteo Lencou">
+  <link rel="canonical" href="https://elie2626.github.io/ostheopathe-bordeaux/contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://elie2626.github.io/ostheopathe-bordeaux/contact.html">
+  <meta property="og:title"       content="Contact Ostéopathe Bordeaux — Adresse & RDV Matteo Lencou">
+  <meta property="og:description" content="Cabinet au 30 Av. Vercingétorix, Bordeaux. RDV en ligne 24h/24 sur Doctolib. Consultations aussi à domicile et au Cap Ferret.">
+  <meta property="og:image"       content="https://elie2626.github.io/ostheopathe-bordeaux/img/photo_doc.jpg">
+  <meta property="og:locale"      content="fr_FR">
+
+  <!-- Structured data — LocalBusiness avec horaires -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["MedicalBusiness", "LocalBusiness"],
+    "name": "Matteo Lencou — Ostéopathe D.O. Bordeaux",
+    "url": "https://elie2626.github.io/ostheopathe-bordeaux",
+    "telephone": "+33675572488",
+    "email": "osteopathe.lencou@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "30 Avenue Vercingétorix",
+      "addressLocality": "Bordeaux",
+      "addressRegion": "Gironde",
+      "postalCode": "33000",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.8361,
+      "longitude": -0.5845
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      }
+    ],
+    "hasMap": "https://maps.google.com/?q=30+Avenue+Vercingétorix+33000+Bordeaux",
+    "sameAs": ["https://www.doctolib.fr/osteopathe/bordeaux/matteo-lencou"]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .contact-block {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+    .contact-item-icon {
+      flex-shrink: 0;
+      width: 46px; height: 46px;
+      background: var(--g50);
+      border-radius: 50%;
+      border: 1px solid rgba(82,183,136,.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-item-icon svg {
+      width: 20px; height: 20px;
+      stroke: var(--g600);
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .contact-item dt {
+      font-family: var(--font-b);
+      font-size: 9.5px;
+      font-weight: 500;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 5px;
+    }
+    .contact-item dd {
+      font-size: 15px;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .contact-item dd a {
+      color: var(--g600);
+      transition: color var(--t);
+    }
+    .contact-item dd a:hover { color: var(--g500); }
+
+    .horaires-label {
+      font-family: var(--font-b);
+      font-size: 9.5px;
+      font-weight: 500;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--text3);
+      margin-bottom: 12px;
+    }
+    .horaires-table {
+      border: 1px solid var(--ivory-3);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-top: 4px;
+    }
+    .horaire-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px 18px;
+      border-bottom: 1px solid var(--ivory-3);
+      background: #fff;
+      transition: background .2s ease;
+      gap: 12px;
+    }
+    .horaire-row:last-child { border-bottom: none; }
+    .horaire-row:hover { background: var(--g50); }
+    .horaire-row .day {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+    }
+    .horaire-row .h-hours {
+      font-size: 13px;
+      color: var(--text2);
+      text-align: right;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .h-sep {
+      color: var(--g400);
+      font-size: 11px;
+    }
+    .h-badge {
+      display: inline-flex;
+      align-items: center;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .h-badge--closed {
+      background: rgba(180,40,40,.08);
+      color: #b42828;
+    }
+    .h-badge--special {
+      background: var(--g50);
+      color: var(--g600);
+      border: 1px solid rgba(82,183,136,.2);
+    }
+
+    .form-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 20px;
+    }
+
+    .doctolib-cta {
+      background: var(--g50);
+      border: 1px solid rgba(82,183,136,.2);
+      border-radius: 14px;
+      padding: 28px 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+    .doctolib-cta svg {
+      flex-shrink: 0;
+      width: 32px; height: 32px;
+      stroke: var(--g500);
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .doctolib-cta div p { font-size: 13px; color: var(--text-3); margin-top: 2px; }
+    .doctolib-cta h4 { font-size: 15px; color: var(--g800); }
+
+    .map-container {
+      border-radius: 16px;
+      overflow: hidden;
+      height: 420px;
+      box-shadow: 0 4px 24px rgba(0,0,0,.10);
+      border: 1px solid var(--ivory-3);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 900px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .form-grid-2  { grid-template-columns: 1fr; }
+      .map-container { height: 300px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav light" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="name">Matteo Lencou</span>
+      <span class="sub">Ostéopathe D.O. · Bordeaux</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="soins.html">Soins</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <a href="https://www.doctolib.fr/osteopathe/bordeaux/matteo-lencou/booking/places?specialityId=10&telehealth=false&profile_skipped=true&source=external_referral"
+           class="btn btn-primary" target="_blank" rel="noopener noreferrer">Prendre RDV</a>
+      </li>
+    </ul>
+    <button class="burger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Accueil</a>
+  <a href="a-propos.html">À propos</a>
+  <a href="soins.html">Soins</a>
+  <a href="tarifs.html">Tarifs</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://www.doctolib.fr/osteopathe/bordeaux/matteo-lencou/booking/places?specialityId=10&telehealth=false&profile_skipped=true&source=external_referral"
+     target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:12px">Prendre RDV</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="ph-bg" style="background-image:url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=1600&q=80&auto=format&fit=crop');background-position:center 30%"></div>
+  <div class="ph-overlay"></div>
+  <svg class="ph-grid" viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <line x1="0" y1="75"  x2="1200" y2="75"  style="--delay:.1s"/>
+    <line x1="0" y1="150" x2="1200" y2="150" style="--delay:.4s"/>
+    <line x1="0" y1="225" x2="1200" y2="225" style="--delay:.7s"/>
+    <line x1="150"  y1="0" x2="150"  y2="300" style="--delay:.2s"/>
+    <line x1="375"  y1="0" x2="375"  y2="300" style="--delay:.5s"/>
+    <line x1="600"  y1="0" x2="600"  y2="300" style="--delay:.8s"/>
+    <line x1="825"  y1="0" x2="825"  y2="300" style="--delay:1.1s"/>
+    <line x1="1050" y1="0" x2="1050" y2="300" style="--delay:1.4s"/>
+  </svg>
+  <div class="ph-corner ph-corner--tl"></div>
+  <div class="ph-corner ph-corner--tr"></div>
+  <div class="ph-corner ph-corner--bl"></div>
+  <div class="ph-corner ph-corner--br"></div>
+  <div class="ph-dot" style="left:14%;--delay:0s;--dur:5s"></div>
+  <div class="ph-dot" style="left:40%;--delay:1.5s;--dur:6s"></div>
+  <div class="ph-dot" style="left:67%;--delay:.7s;--dur:5.5s"></div>
+  <div class="ph-dot" style="left:88%;--delay:2.8s;--dur:4.5s"></div>
+  <div class="wrap" style="position:relative;z-index:3">
+    <span class="eyebrow">Nous trouver</span>
+    <h1><span class="word-anim" style="--d:.3s">Contact</span> <span class="word-anim" style="--d:.5s">&amp;</span> <span class="word-anim" style="--d:.7s">Accès</span></h1>
+  </div>
+</section>
+
+<!-- CONTACT MAIN -->
+<section class="section">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <!-- LEFT: infos -->
+      <div class="contact-block">
+
+        <div class="reveal">
+          <span class="eyebrow" style="color:var(--g500)">Le cabinet</span>
+          <h2>Informations pratiques</h2>
+          <div class="rule"></div>
+        </div>
+
+        <dl>
+          <div class="contact-item reveal">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <dt>Adresse</dt>
+              <dd>30 Av. Vercingétorix<br>33000 Bordeaux</dd>
+            </div>
+          </div>
+
+          <div class="contact-item reveal">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+            </div>
+            <div>
+              <dt>Téléphone</dt>
+              <dd><a href="tel:+33675572488">06 75 57 24 88</a></dd>
+            </div>
+          </div>
+
+          <div class="contact-item reveal">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:osteopathe.lencou@gmail.com">osteopathe.lencou@gmail.com</a></dd>
+            </div>
+          </div>
+        </dl>
+
+        <!-- HORAIRES -->
+        <div class="reveal">
+          <p class="horaires-label">Horaires d'ouverture</p>
+          <div class="horaires-table">
+            <div class="horaire-row">
+              <span class="day">Lun – Ven</span>
+              <span class="h-hours">
+                9h00 – 13h00
+                <span class="h-sep">·</span>
+                14h15 – 21h00
+              </span>
+            </div>
+            <div class="horaire-row">
+              <span class="day">Samedi</span>
+              <span class="h-badge h-badge--closed">Fermé</span>
+            </div>
+            <div class="horaire-row">
+              <span class="day">Dimanche</span>
+              <span class="h-badge h-badge--special">Sur demande</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAP -->
+        <div class="map-container reveal">
+          <iframe
+            src="https://maps.google.com/maps?q=30+Avenue+Vercingétorix,+33000+Bordeaux,+France&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="100%"
+            style="border:0;display:block;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Cabinet Matteo Lencou — 30 Av. Vercingétorix, Bordeaux">
+          </iframe>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: form -->
+      <div class="reveal">
+        <div class="doctolib-cta">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <div>
+            <h4>Prise de rendez-vous en ligne</h4>
+            <p>Disponible 24h/24 — réponse immédiate</p>
+            <a href="https://www.doctolib.fr/osteopathe/bordeaux/matteo-lencou/booking/places?specialityId=10&telehealth=false&profile_skipped=true&source=external_referral"
+               class="btn btn-dark" target="_blank" rel="noopener noreferrer" style="margin-top:14px;display:inline-flex">
+              Réserver sur Doctolib
+            </a>
+          </div>
+        </div>
+
+        <span class="eyebrow" style="color:var(--g500);margin-bottom:24px;display:block">Ou envoyez un message</span>
+        <form class="contact-form" onsubmit="handleForm(event)">
+          <div class="form-grid-2">
+            <div>
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required autocomplete="given-name">
+            </div>
+            <div>
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required autocomplete="family-name">
+            </div>
+          </div>
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="votre@email.fr" required autocomplete="email">
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" placeholder="06 XX XX XX XX" autocomplete="tel">
+          <label for="motif">Motif de la consultation</label>
+          <select id="motif" name="motif">
+            <option value="">— Sélectionnez un motif —</option>
+            <option>Douleurs du dos / cou</option>
+            <option>Sportif / blessure</option>
+            <option>Nourrisson / pédiatrie</option>
+            <option>Grossesse / post-partum</option>
+            <option>Maux de tête / migraines</option>
+            <option>Troubles digestifs</option>
+            <option>Autre</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Décrivez brièvement votre situation…"></textarea>
+          <!-- Honeypot anti-spam (invisible) -->
+          <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+
+          <button type="submit" class="btn btn-primary" id="submit-btn" style="width:100%;justify-content:center">
+            Envoyer le message
+          </button>
+          <p id="form-msg" style="display:none;margin-top:14px;font-size:13px;text-align:center"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2 class="reveal">La prise en charge commence ici</h2>
+    <p class="reveal">Réservez directement en ligne — simple, rapide, sans attente</p>
+    <a href="https://www.doctolib.fr/osteopathe/bordeaux/matteo-lencou/booking/places?specialityId=10&telehealth=false&profile_skipped=true&source=external_referral"
+       class="btn btn-dark reveal" target="_blank" rel="noopener noreferrer">
+      Réserver sur Doctolib
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="fn">Matteo Lencou</div>
+        <span class="fs">Ostéopathe D.O.</span>
+        <p>Cabinet d'ostéopathie à Bordeaux. Consultations sur rendez-vous, pour toute la famille.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="soins.html">Soins</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Cabinet</h5>
+        <ul>
+          <li><span>30 Av. Vercingétorix</span></li>
+          <li><span>33000 Bordeaux</span></li>
+          <li><a href="tel:+33675572488">06 75 57 24 88</a></li>
+          <li><a href="https://www.doctolib.fr/osteopathe/bordeaux/matteo-lencou/booking/places?specialityId=10&telehealth=false&profile_skipped=true&source=external_referral"
+                 target="_blank" rel="noopener noreferrer">Prendre RDV — Doctolib</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Matteo Lencou — Ostéopathe D.O. Bordeaux</p>
+      <p>Site réalisé avec soin</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+<!-- Firebase + envoi mail -->
+<script type="module">
+  import { initializeApp }                                     from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  const app = initializeApp({
+    apiKey:            "AIzaSyC_df2IuXjZdK2wqg-XOcKdBEAEcm8cNqc",
+    authDomain:        "rivallq-8e433.firebaseapp.com",
+    projectId:         "rivallq-8e433",
+    storageBucket:     "rivallq-8e433.firebasestorage.app",
+    messagingSenderId: "502914572274",
+    appId:             "1:502914572274:web:b1ab72b04f37aa1b65556b"
+  });
+  const db = getFirestore(app);
+
+  // ➜ Va sur web3forms.com, entre osteopathe.lencou@gmail.com, copie la clé ici
+  const W3F_KEY = 'REMPLACE_PAR_TA_CLE_WEB3FORMS';
+
+  window.handleForm = async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const btn  = document.getElementById('submit-btn');
+    const msg  = document.getElementById('form-msg');
+
+    if (form.website && form.website.value) return; // honeypot
+
+    btn.disabled      = true;
+    btn.textContent   = 'Envoi en cours…';
+    msg.style.display = 'none';
+
+    const prenom    = form.prenom.value.trim();
+    const nom       = form.nom.value.trim();
+    const email     = form.email.value.trim();
+    const telephone = form.telephone.value.trim() || 'Non renseigné';
+    const motif     = form.motif.value            || 'Non précisé';
+    const message   = form.message.value.trim()   || '—';
+
+    try {
+      // 1 — Sauvegarde Firestore
+      await addDoc(collection(db, 'messages'), {
+        prenom, nom, email,
+        telephone: telephone !== 'Non renseigné' ? telephone : null,
+        motif:     motif     !== 'Non précisé'   ? motif     : null,
+        message:   message   !== '—'             ? message   : null,
+        timestamp: serverTimestamp(),
+        lu: false
+      });
+
+      // 2 — Envoi mail (répondre au mail = mail du client)
+      await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: W3F_KEY,
+          subject:    `Nouveau message de ${prenom} ${nom}`,
+          from_name:  `${prenom} ${nom}`,
+          replyto:    email,
+          email:      email,
+          telephone,
+          motif,
+          message
+        })
+      });
+
+      msg.textContent   = '✓ Message envoyé — Matteo vous répondra dans les plus brefs délais.';
+      msg.style.color   = 'var(--g500)';
+      msg.style.display = 'block';
+      form.reset();
+
+    } catch (err) {
+      console.error('Erreur:', err);
+      msg.textContent   = 'Une erreur est survenue. Réessayez ou appelez directement le 06 75 57 24 88.';
+      msg.style.color   = '#b42828';
+      msg.style.display = 'block';
+    } finally {
+      btn.disabled    = false;
+      btn.textContent = 'Envoyer le message';
+    }
+  };
+</script>
+</body>
+</html>

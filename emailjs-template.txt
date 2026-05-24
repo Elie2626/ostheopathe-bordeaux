@@ -1,0 +1,52 @@
+===================================================
+  TEMPLATE EMAILJS — à coller dans Email Templates
+===================================================
+
+SUBJECT :
+  Nouveau message de {{from_name}}
+
+BODY (HTML ou Text) :
+─────────────────────────────────────────────────
+Nouveau message reçu via le formulaire du site.
+
+👤 Patient : {{from_name}}
+📧 Email   : {{reply_to}}
+📞 Tél.    : {{telephone}}
+🩺 Motif   : {{motif}}
+
+💬 Message :
+{{message}}
+
+─────────────────────────────────────────────────
+Répondre à ce mail → la réponse part directement
+à l'adresse email du patient.
+─────────────────────────────────────────────────
+
+
+===================================================
+  CONFIGURATION EMAILJS (emailjs.com)
+===================================================
+
+1. Créer un compte sur https://www.emailjs.com
+   (plan gratuit = 200 mails/mois)
+
+2. Email Services → Add New Service
+   → choisir Gmail → connecter osteopathe.lencou@gmail.com
+   → copier le SERVICE ID
+
+3. Email Templates → Create New Template
+   → coller le Subject et Body ci-dessus
+   → dans "To Email" mettre : osteopathe.lencou@gmail.com
+   → dans "Reply To"  mettre : {{reply_to}}
+   → copier le TEMPLATE ID
+
+4. Account → API Keys → copier la PUBLIC KEY
+
+5. Dans contact.html, remplacer les 3 lignes :
+   const EJS_PUBLIC_KEY  = 'EMAILJS_PUBLIC_KEY';
+   const EJS_SERVICE_ID  = 'EMAILJS_SERVICE_ID';
+   const EJS_TEMPLATE_ID = 'EMAILJS_TEMPLATE_ID';
+
+   par tes vraies valeurs.
+
+===================================================

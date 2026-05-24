@@ -1,0 +1,48 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /messages/{messageId} {
+
+      // Lecture bloquée côté site — tu lis dans la console Firebase
+      allow read: if false;
+
+      // Création autorisée pour tout le monde (formulaire public)
+      allow create: if
+        // Champs obligatoires présents
+        request.resource.data.keys().hasAll(['prenom', 'nom', 'email', 'timestamp'])
+
+        // Aucun champ inconnu autorisé
+        && request.resource.data.keys().hasOnly(['prenom', 'nom', 'email', 'telephone', 'motif', 'message', 'timestamp', 'lu'])
+
+        // Validation des types et tailles
+        && request.resource.data.prenom    is string
+        && request.resource.data.prenom.size() >= 1
+        && request.resource.data.prenom.size() <= 100
+
+        && request.resource.data.nom       is string
+        && request.resource.data.nom.size() >= 1
+        && request.resource.data.nom.size() <= 100
+
+        && request.resource.data.email     is string
+        && request.resource.data.email.size() >= 5
+        && request.resource.data.email.size() <= 200
+
+        && (request.resource.data.telephone == null || (request.resource.data.telephone is string && request.resource.data.telephone.size() <= 20))
+        && (request.resource.data.motif     == null || (request.resource.data.motif     is string && request.resource.data.motif.size()     <= 100))
+        && (request.resource.data.message   == null || (request.resource.data.message   is string && request.resource.data.message.size()   <= 2000))
+
+        && request.resource.data.timestamp is timestamp
+        && request.resource.data.lu        is bool
+        && request.resource.data.lu        == false;
+
+      // Modification et suppression bloquées depuis le site
+      allow update, delete: if false;
+    }
+
+    // Tout le reste est bloqué
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

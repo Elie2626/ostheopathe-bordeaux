@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ostéopathe Bordeaux — Matteo Lencou D.O. | Dos, Sport, Bébé, Grossesse</title>
+  <meta name="description" content="Ostéopathe D.O. à Bordeaux. Matteo Lencou traite dos, sciatique, nourrissons, sportifs, femmes enceintes, migraines. RDV rapide au 30 Av. Vercingétorix — Doctolib 24h/24.">
+  <meta name="keywords" content="ostéopathe bordeaux, ostéopathe bordeaux rendez-vous, cabinet ostéopathie bordeaux, ostéopathe DO bordeaux, ostéopathe dos bordeaux, ostéopathe sciatique bordeaux, ostéopathe nourrisson bordeaux, ostéopathe bébé bordeaux, ostéopathe sportif bordeaux, ostéopathe grossesse bordeaux, ostéopathe migraine bordeaux, ostéopathe cervicales bordeaux, ostéopathe lombalgies bordeaux, ostéopathe 33000, ostéopathe domicile bordeaux, ostéopathe cap ferret, ostéopathe anglophone bordeaux, meilleur ostéopathe bordeaux">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Matteo Lencou">
+  <link rel="canonical" href="https://elie2626.github.io/ostheopathe-bordeaux/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://elie2626.github.io/ostheopathe-bordeaux/">
+  <meta property="og:title"       content="Ostéopathe Bordeaux — Matteo Lencou D.O.">
+  <meta property="og:description" content="Ostéopathe D.O. à Bordeaux. Dos, sport, nourrissons, grossesse, migraines. RDV en ligne 24h/24 sur Doctolib.">
+  <meta property="og:image"       content="https://elie2626.github.io/ostheopathe-bordeaux/img/photo_doc.jpg">
+  <meta property="og:locale"      content="fr_FR">
+  <meta property="og:site_name"   content="Matteo Lencou — Ostéopathe Bordeaux">
+
+  <!-- Structured data — LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["MedicalBusiness", "LocalBusiness"],
+    "name": "Matteo Lencou — Ostéopathe D.O. Bordeaux",
+    "url": "https://elie2626.github.io/ostheopathe-bordeaux",
+    "telephone": "+33675572488",
+    "email": "osteopathe.lencou@gmail.com",
+    "image": "https://elie2626.github.io/ostheopathe-bordeaux/img/photo_doc.jpg",
+    "description": "Matteo Lencou, ostéopathe D.O. à Bordeaux. Prise en charge des douleurs du dos, sciatique, cervicales, nourrissons, sportifs, femmes enceintes, migraines et troubles digestifs.",
+    "priceRange": "€€",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Cash, Chèque, Carte bancaire",
+    "medicalSpecialty": "Osteopathic Medicine",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "30 Avenue Vercingétorix",
+      "addressLocality": "Bordeaux",
+      "addressRegion": "Gironde",
+      "postalCode": "33000",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.8361,
+      "longitude": -0.5845
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      }
+    ],
+    "hasMap": "https://maps.google.com/?q=30+Avenue+Vercingétorix+33000+Bordeaux",
+    "sameAs": [
+      "https://www.doctolib.fr/osteopathe/bordeaux/matteo-lencou"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "64",
+      "bestRating": "5"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    /* ── About grid ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .about-img { height: 520px; }
+
+    /* ── Soins dark section ── */
+    .soins-dark {
+      background: var(--g800);
+      padding: var(--sp) 0;
+    }
+    .soins-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+    }
+
+    /* ── Stats band ── */
+    .stats-band {
+      background: var(--g750);
+      padding: 56px 0;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 0;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 24px 16px;
+      border-right: 1px solid rgba(168,216,185,.1);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: var(--font-d);
+      font-size: clamp(40px,5vw,64px);
+      font-weight: 400;
+      color: var(--g200);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-num sup { font-size: .45em; vertical-align: super; }
+    .stat-label {
+      font-size: 10px;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--g400);
+      font-family: var(--font-b);
+      font-weight: 400;
+    }
+
+    @media (max-width: 900px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .about-img  { height: 360px; }
+      .soins-grid { grid-template-columns: 1fr 1fr; }
+      .stats-grid { grid-template-columns: repeat(2,1fr); }
+      .stat-item:nth-child(2) { border-right: none; }
+    }
+    @media (max-width: 600px) {
+      .soins-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav dark" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="name">Matteo Lencou</span>
+      <span class="sub">Ostéopathe D.O. · Bordeaux</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="soins.html">Soins</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <a href="https://www.doctolib.fr/osteopathe/bordeaux/matteo-lencou/booking/places?specialityId=10&telehealth=false&profile_skipped=true&source=external_referral"
+           class="btn btn-primary" target="_blank" rel="noopener noreferrer">Prendre RDV</a>
+      </li>
+    </ul>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Accueil</a>
+  <a href="a-propos.html">À propos</a>
+  <a href="soins.html">Soins</a>
+  <a href="tarifs.html">Tarifs</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://www.doctolib.fr/osteopathe/bordeaux/matteo-lencou/booking/places?specialityId=10&telehealth=false&profile_skipped=true&source=external_referral"
+     target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:12px">Prendre RDV</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('img/azerty.jpg');"></div>
+  <div class="hero-overlay"></div>
+
+
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow">Ostéopathie · Bordeaux</span>
+      <h1 class="display hero-title">
+        Retrouvez<br>
+        <em>l'équilibre</em><br>
+        de votre corps
+      </h1>
+      <p class="hero-desc">Matteo Lencou, ostéopathe D.O. à Bordeaux, vous accompagne avec une approche globale, douce et entièrement personnalisée.</p>
+      <div class="hero-actions">
+        <a href="https://www.doctolib.fr/osteopathe/bordeaux/matteo-lencou/booking/places?specialityId=10&telehealth=false&profile_skipped=true&source=external_referral"
+           class="btn btn-primary" target="_blank" rel="noopener noreferrer">Prendre rendez-vous</a>
+        <a href="soins.html" class="btn btn-ghost">Découvrir les soins →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Défiler</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <div class="strip-grid">
+      <div class="strip-item reveal">
+        <div class="strip-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="strip-text">
+          <h4>Approche globale</h4>
+          <p>Traitement de la personne entière, corps et posture, pas uniquement du symptôme.</p>
+        </div>
+      </div>
+      <div class="strip-item reveal">
+        <div class="strip-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="strip-text">
+          <h4>Rendez-vous rapide</h4>
+          <p>Agenda en ligne disponible 24h/24 via Doctolib, sans attente au téléphone.</p>
+        </div>
+      </div>
+      <div class="strip-item reveal">
+        <div class="strip-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="strip-text">
+          <h4>Tous publics</h4>
+          <p>Nourrissons, sportifs, femmes enceintes, personnes âgées — toute la famille.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-band">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-num">1<sup>h</sup></div>
+        <div class="stat-label">Durée moyenne d'une séance</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Spécialités traitées</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num">D.O.</div>
+        <div class="stat-label">Diplôme d'État</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-num">24<sup>h</sup></div>
+        <div class="stat-label">Réservation en ligne</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT PREVIEW -->
+<section class="section">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo about-img reveal">
+        <img src="img/photo_doc.jpg" alt="Matteo Lencou, ostéopathe à Bordeaux" style="object-position:center 18%">
+      </div>
+      <div class="reveal">
+        <span class="eyebrow" style="color:var(--g500)">À propos</span>
+        <h2>Un ostéopathe à l'écoute de votre corps</h2>
+        <div class="rule"></div>
+        <p>Diplômé en ostéopathie, Matteo Lencou exerce à Bordeaux avec une conviction : chaque patient est unique. Ses consultations associent écoute attentive et techniques manuelles précises pour traiter la cause, pas seulement la douleur.</p>
+        <p style="margin-top:14px">Que vous soyez sportif, jeune parent, actif stressé ou senior, il adapte chaque séance à votre réalité.</p>
+        <a href="a-propos.html" class="btn btn-outline" style="margin-top:32px">En savoir plus</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOINS PREVIEW -->
+<section class="soins-dark">
+  <div class="wrap">
+    <div class="section-header reveal" style="margin-bottom:48px">
+      <span class="eyebrow">Soins &amp; Spécialités</span>
+      <h2 style="color:var(--g50)">Ce que je traite</h2>
+      <div class="rule"></div>
+      <p style="color:var(--g300);max-width:480px">Une prise en charge adaptée à chaque situation, pour chaque tranche d'âge.</p>
+    </div>
+    <div class="soins-grid">
+      <div class="soin-photo-card tilt reveal">
+        <img src="img/photo.jpg" alt="Ostéopathie — douleurs du dos">
+        <div class="soin-photo-overlay"></div>
+        <div class="soin-photo-content">
+          <div class="soin-num">01</div>
+          <h3>Douleurs du dos &amp; cou</h3>
+          <p>Lombalgies, cervicalgies, sciatiques, hernies discales.</p>
+          <div class="soin-tags"><span class="soin-tag">Dos</span><span class="soin-tag">Cou</span><span class="soin-tag">Sciatique</span></div>
+        </div>
+      </div>
+      <div class="soin-photo-card tilt reveal">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80&auto=format&fit=crop" alt="Ostéopathie du sport">
+        <div class="soin-photo-overlay"></div>
+        <div class="soin-photo-content">
+          <div class="soin-num">02</div>
+          <h3>Sportifs &amp; blessures</h3>
+          <p>Entorses, tendinites, récupération, performance sportive.</p>
+          <div class="soin-tags"><span class="soin-tag">Sport</span><span class="soin-tag">Blessure</span><span class="soin-tag">Récupération</span></div>
+        </div>
+      </div>
+      <div class="soin-photo-card tilt reveal">
+        <img src="img/azertytre.jpg" alt="Ostéopathie — traitement manuel">
+        <div class="soin-photo-overlay"></div>
+        <div class="soin-photo-content">
+          <div class="soin-num">03</div>
+          <h3>Pédiatrie &amp; nourrissons</h3>
+          <p>Plagiocéphalie, coliques, troubles du sommeil.</p>
+          <div class="soin-tags"><span class="soin-tag">Bébé</span><span class="soin-tag">Enfant</span><span class="soin-tag">Nourrisson</span></div>
+        </div>
+      </div>
+      <div class="soin-photo-card tilt reveal">
+        <img src="img/zsderfgb.jpg" alt="Ostéopathie grossesse">
+        <div class="soin-photo-overlay"></div>
+        <div class="soin-photo-content">
+          <div class="soin-num">04</div>
+          <h3>Grossesse &amp; post-partum</h3>
+          <p>Suivi ostéopathique tout au long de la grossesse.</p>
+          <div class="soin-tags"><span class="soin-tag">Grossesse</span><span class="soin-tag">Post-partum</span></div>
+        </div>
+      </div>
+      <div class="soin-photo-card tilt reveal">
+        <img src="img/migraine.jpg" alt="Céphalées et migraines">
+        <div class="soin-photo-overlay"></div>
+        <div class="soin-photo-content">
+          <div class="soin-num">05</div>
+          <h3>Céphalées &amp; migraines</h3>
+          <p>Maux de tête, vertiges, troubles de l'équilibre.</p>
+          <div class="soin-tags"><span class="soin-tag">Migraine</span><span class="soin-tag">Vertiges</span></div>
+        </div>
+      </div>
+      <div class="soin-photo-card tilt reveal">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80&auto=format&fit=crop" alt="Troubles digestifs ostéopathie">
+        <div class="soin-photo-overlay"></div>
+        <div class="soin-photo-content">
+          <div class="soin-num">06</div>
+          <h3>Troubles digestifs</h3>
+          <p>Reflux, colon irritable, constipation, ballonnements.</p>
+          <div class="soin-tags"><span class="soin-tag">Digestif</span><span class="soin-tag">Reflux</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:52px;text-align:center">
+      <a href="soins.html" class="btn btn-primary">Voir tous les soins</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2 class="reveal">Prêt à prendre soin de vous ?</h2>
+    <p class="reveal">Réservez votre consultation en quelques clics — disponible 24h/24</p>
+    <a href="https://www.doctolib.fr/osteopathe/bordeaux/matteo-lencou/booking/places?specialityId=10&telehealth=false&profile_skipped=true&source=external_referral"
+       class="btn btn-dark reveal" target="_blank" rel="noopener noreferrer">Réserver sur Doctolib</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="fn">Matteo Lencou</div>
+        <span class="fs">Ostéopathe D.O.</span>
+        <p>Cabinet d'ostéopathie à Bordeaux. Consultations sur rendez-vous, pour toute la famille.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="soins.html">Soins</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Cabinet</h5>
+        <ul>
+          <li><span>30 Av. Vercingétorix</span></li>
+          <li><span>33000 Bordeaux</span></li>
+          <li><a href="tel:+33675572488">06 75 57 24 88</a></li>
+          <li><a href="https://www.doctolib.fr/osteopathe/bordeaux/matteo-lencou/booking/places?specialityId=10&telehealth=false&profile_skipped=true&source=external_referral"
+                 target="_blank" rel="noopener noreferrer">Prendre RDV — Doctolib</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Matteo Lencou — Ostéopathe D.O. Bordeaux</p>
+      <p>Site réalisé avec soin</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
