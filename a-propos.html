@@ -114,38 +114,55 @@
       margin-top: 40px;
     }
     .pro-card {
-      background: #fff;
-      border: 1px solid var(--ivory-3);
+      position: relative;
+      overflow: hidden;
       border-radius: 16px;
-      padding: 28px 22px;
+      padding: 32px 24px;
+      min-height: 220px;
       display: flex;
       flex-direction: column;
       gap: 10px;
-      transition: transform .25s, box-shadow .25s;
+      background-size: cover;
+      background-position: center;
+      transition: transform .3s, box-shadow .3s;
+    }
+    .pro-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, rgba(20,12,4,.60) 0%, rgba(20,12,4,.88) 100%);
+      transition: opacity .3s;
+      z-index: 0;
     }
     .pro-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(92,74,42,.08);
+      transform: translateY(-5px);
+      box-shadow: 0 20px 48px rgba(20,12,4,.30);
     }
+    .pro-card:hover::before {
+      opacity: .75;
+    }
+    .pro-card > * { position: relative; z-index: 1; }
     .pro-icon {
       width: 44px; height: 44px;
-      background: var(--g50);
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.2);
       border-radius: 12px;
       display: flex; align-items: center; justify-content: center;
-      color: var(--g500);
+      color: #fff;
       font-size: 20px;
       margin-bottom: 4px;
+      backdrop-filter: blur(4px);
     }
     .pro-card h4 {
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 600;
-      color: var(--g800);
+      color: #fff;
       margin: 0;
     }
     .pro-card p {
       font-size: 13px;
-      line-height: 1.6;
-      color: var(--text-3);
+      line-height: 1.65;
+      color: rgba(255,255,255,.78);
       margin: 0;
     }
     @media (max-width: 900px) {
@@ -333,32 +350,32 @@
       </p>
     </div>
     <div class="pros-grid">
-      <div class="pro-card reveal">
+      <div class="pro-card reveal" style="background-image:url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80&auto=format&fit=crop')">
         <div class="pro-icon"><i class="ti ti-stethoscope" aria-hidden="true"></i></div>
         <h4>Médecins du sport</h4>
         <p>2 médecins généralistes spécialisés dans le suivi du sportif, pour une prise en charge médicale complète avant et après blessure.</p>
       </div>
-      <div class="pro-card reveal">
+      <div class="pro-card reveal" style="background-image:url('https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=600&q=80&auto=format&fit=crop')">
         <div class="pro-icon"><i class="ti ti-brain" aria-hidden="true"></i></div>
         <h4>Psychologue du sport</h4>
         <p>Accompagnement mental pour la gestion du stress de compétition, la récupération post-blessure et la préparation mentale.</p>
       </div>
-      <div class="pro-card reveal">
+      <div class="pro-card reveal" style="background-image:url('https://images.unsplash.com/photo-1516069677018-378515003435?w=600&q=80&auto=format&fit=crop')">
         <div class="pro-icon"><i class="ti ti-scan" aria-hidden="true"></i></div>
         <h4>Radiologue</h4>
         <p>Partenariat avec un radiologue pour orienter rapidement vers l'imagerie médicale nécessaire (IRM, radio, écho) en cas de besoin.</p>
       </div>
-      <div class="pro-card reveal">
+      <div class="pro-card reveal" style="background-image:url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80&auto=format&fit=crop')">
         <div class="pro-icon"><i class="ti ti-activity" aria-hidden="true"></i></div>
         <h4>Kinésithérapeutes</h4>
         <p>Travail en complémentarité avec des kinés pour assurer le continuum de soins entre la séance d'ostéopathie et la rééducation.</p>
       </div>
-      <div class="pro-card reveal">
+      <div class="pro-card reveal" style="background-image:url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80&auto=format&fit=crop')">
         <div class="pro-icon"><i class="ti ti-shoe" aria-hidden="true"></i></div>
         <h4>Podologues</h4>
         <p>Collaboration pour le bilan podologique et la confection de semelles orthopédiques, souvent complémentaires du traitement ostéopathique.</p>
       </div>
-      <div class="pro-card reveal">
+      <div class="pro-card reveal" style="background-image:url('https://images.unsplash.com/photo-1544298621-35a764929de0?w=600&q=80&auto=format&fit=crop')">
         <div class="pro-icon"><i class="ti ti-users" aria-hidden="true"></i></div>
         <h4>Staff RC Floirac</h4>
         <p>Référent médical des joueurs Espoir du Rugby Club de Floirac (National 2), en lien direct avec l'ensemble du staff technique et médical du club.</p>
