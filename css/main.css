@@ -927,7 +927,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-.footer-bottom p { font-size: 11px; color: var(--g700); font-family: var(--font-b); }
+.footer-bottom p { font-size: 11px; color: var(--g400); font-family: var(--font-b); font-weight: 300; }
 
 /* ─── Reveal animations ─── */
 .reveal {
